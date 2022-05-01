@@ -16,6 +16,11 @@ target 'socialcoin' do
     :hermes_enabled => podfile_properties['expo.jsEngine'] == 'hermes'
   )
 
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
+
+  pod 'Firebase/Analytics'
+  pod 'GoogleTagManager'
+
   # Uncomment to opt-in to using Flipper
   #
   # if !ENV['CI']
